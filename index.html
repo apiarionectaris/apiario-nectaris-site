@@ -8,61 +8,59 @@
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:#f8f4e8;
+background:#f8f4e8; /* Creme suave para o fundo da página, combinando com produtos naturais */
 color:#333;
 text-align:center;
 }
 
-/* Estilo para deixar o banner responsivo e sem bordas */
+/* Estilo do banner responsivo */
 .banner-container {
 width: 100%;
 overflow: hidden;
-line-height: 0; /* Remove pequenos espaços em branco abaixo da imagem */
+line-height: 0;
+background: #000000; /* Garante fundo preto caso a imagem demore a carregar */
 }
 .banner-container img {
 width: 100%;
 height: auto;
 display: block;
+max-width: 1200px; /* Evita que o banner estique demais em telas gigantes */
+margin: 0 auto;
 }
 
+/* Cabeçalho integrado ao fundo preto do banner */
 header{
-background:#f4b400;
-padding:50px 20px;
+background:#000000; 
+padding:40px 20px 60px 20px;
+color: #e0e0e0; /* Texto claro para leitura sobre o fundo preto */
 }
-h1{
-margin:0;
-font-size:42px;
+h2, h3 {
+color: #d4af37; /* Dourado sofisticado extraído do seu logo */
+margin-top: 30px;
 }
 p{
 font-size:20px;
 max-width:700px;
 margin:auto;
 padding:20px;
+line-height: 1.6;
 }
-.botao{
-display:inline-block;
-margin:15px;
-padding:15px 30px;
-background:#2e7d32;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
+
 footer{
 margin-top:60px;
 padding:20px;
-background:#222;
-color:white;
+background:#111111;
+color:#888;
+font-size: 14px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- O Banner foi adicionado aqui, logo no início do topo -->
+<!-- Seu banner real (imagem 173142.jpg) -->
 <div class="banner-container">
-    <img src="banner-apiario.jpg" alt="Banner Apiário Nectaris">
+    <img src="banner-apiario.jpg" alt="Apiário Nectaris - Essência da Colmeia">
 </div>
 
 <header>
@@ -91,7 +89,7 @@ color:white;
 
 <h3>🐝 Respeito às abelhas</h3>
 <p>
-As proteção das abelhas são a essência do nosso trabalho. Adotamos práticas de manejo responsáveis,
+A proteção das abelhas é a essência do nosso trabalho. Adotamos práticas de manejo responsáveis,
 priorizando a saúde e o bem-estar das colônias. Buscamos minimizar o estresse durante os resgates, 
 inspeções e respeitando também os ciclos naturais de desenvolvimento das abelhas.
 </p>
@@ -115,7 +113,7 @@ nossos processos e o compromisso com a confiança de nossos clientes.
 <p>
 Além da produção apícola, compartilhamos conhecimentos sobre a importância
 das abelhas para o meio ambiente e para a agricultura. Acreditamos que a informação
-é uma ferramenta essencial para incentivar a保存 dos esses importantes
+é uma ferramenta essencial para incentivar a preservação desses importantes
 polinizadores.
 </p>
 
@@ -132,6 +130,7 @@ educativos, curiosidades, manejo, apicultura
 e informações sobre o universo das abelhas.
 </p>
 
+<!-- Botão do YouTube estilizado em preto e dourado para combinar com a identidade premium -->
 <a href="https://www.youtube.com/@willianfrancopinto"
    target="_blank"
    rel="noopener noreferrer"
@@ -139,20 +138,21 @@ e informações sobre o universo das abelhas.
       display:inline-flex;
       align-items:center;
       gap:12px;
-      background:#FF0000;
-      color:#fff;
+      background:#111111;
+      color:#d4af37;
       padding:14px 24px;
-      border-radius:10px;
+      border-radius:8px;
       text-decoration:none;
       font-size:18px;
       font-weight:600;
-      transition:0.3s;">
+      transition:0.3s;
+      border: 2px solid #d4af37;">
       
     <svg xmlns="http://www.w3.org/2000/svg"
          width="28"
          height="28"
          viewBox="0 0 24 24"
-         fill="white">
+         fill="#d4af37">
       <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.6 15.5v-7L16 12l-6.4 3.5z"/>
     </svg>
 
@@ -161,7 +161,7 @@ e informações sobre o universo das abelhas.
   
 </header>
   
-<p>
+<p style="color: #333; margin-top: 40px;">
 Cuidar das abelhas é cuidar da vida. Cada
 colmeia saudável contribui para um planeta
 mais equilibrado e para um futuro mais
