@@ -7,63 +7,87 @@
 <style>
 /* Fundo totalmente preto premium integrado ao banner */
 body {
-    margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: #0b0b0b; 
-    color: #e0e0e0;
-    text-align: center;
-    line-height: 1.8; /* Aumentado para melhor leitura */
+margin: 0;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+background: #0b0b0b; 
+color: #e0e0e0;
+text-align: center;
+line-height: 1.8; /* Aumentado para melhor leitura */
 }
 
 /* Favos mais sutis */
-body::before, body::after {
-    content: "⬡⬢⬡\n⬢⬡⬢\n⬡⬢⬡";
-    position: fixed;
-    top: 30%;
-    font-size: 20px;
-    color: rgba(212, 175, 55, 0.08); /* Mais discreto */
-    white-space: pre;
-    pointer-events: none;
-}
-body::before { left: 3%; }
-body::after { right: 3%; }
+body::before { left: 4%; }
+body::after { right: 4%; }
 
+/* Estilo do banner responsivo */
+.banner-container {
+width: 100%;
+overflow: hidden;
+line-height: 0;
+background: #000000;
+}
 .banner-container img {
-    width: 100%;
-    max-width: 1000px;
-    display: block;
-    margin: 0 auto;
+width: 100%;
+height: auto;
+display: block;
+max-width: 1200px;
+margin: 0 auto;
 }
 
-header { padding: 40px 20px; }
+/* Cabeçalho limpo e integrado */
+header {
+background: #000000; 
+padding: 40px 20px 60px 20px;
+}
 
+/* Títulos em Dourado extraído do logo */
 h2, h3 {
-    color: #d4af37;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+color: #d4af37; 
+margin-top: 40px;
+font-weight: 400;
+letter-spacing: 1px;
 }
 
 p {
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 0 20px;
+font-size: 19px;
+max-width: 720px;
+margin: auto;
+padding: 18px 20px;
+line-height: 1.7;
+color: #cccccc;
 }
 
-/* Estilo para garantir que o nome da marca se destaque */
-strong { color: #f4be52; }
+/* Elemento para as abelhas com rastro pontilhado */
+.trilha-abelha {
+display: inline-block;
+font-size: 14px;
+color: rgba(212, 175, 55, 0.4);
+margin: 10px 0;
+font-style: normal;
+}
+
+/* Seção de Compromisso com bordas sutis */
+#compromisso {
+margin-top: 40px;
+padding: 20px 0;
+}
 
 footer {
-    padding: 40px;
-    color: #444;
-    font-size: 12px;
-    border-top: 1px solid #1a1a1a;
+margin-top: 80px;
+padding: 30px;
+background: #050505;
+color: #666;
+font-size: 14px;
+border-top: 1px solid #1a1a1a;
 }
 </style>
 </head>
+
 <body>
 
+<!-- Seu banner real (imagem 173142.jpg) -->
 <div class="banner-container">
-    <img src="banner-apiario.jpg" alt="Banner Apiário Nectaris">
+    <img src="banner-apiario.jpg" alt="Apiário Nectaris - Essência da Colmeia">
 </div>
 
 <header>
