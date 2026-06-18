@@ -12,6 +12,19 @@ background:#f8f4e8;
 color:#333;
 text-align:center;
 }
+
+/* Estilo para deixar o banner responsivo e sem bordas */
+.banner-container {
+width: 100%;
+overflow: hidden;
+line-height: 0; /* Remove pequenos espaços em branco abaixo da imagem */
+}
+.banner-container img {
+width: 100%;
+height: auto;
+display: block;
+}
+
 header{
 background:#f4b400;
 padding:50px 20px;
@@ -46,6 +59,11 @@ color:white;
 </head>
 
 <body>
+
+<!-- O Banner foi adicionado aqui, logo no início do topo -->
+<div class="banner-container">
+    <img src="banner-apiario.jpg" alt="Banner Apiário Nectaris">
+</div>
 
 <header>
   <h2>Bem-vindo ao Apiário Nectaris</h2>
@@ -97,7 +115,7 @@ nossos processos e o compromisso com a confiança de nossos clientes.
 <p>
 Além da produção apícola, compartilhamos conhecimentos sobre a importância
 das abelhas para o meio ambiente e para a agricultura. Acreditamos que a informação
-é uma ferramenta essencial para incentivar a preservação desses importantes
+é uma ferramenta essencial para incentivar a保存 dos esses importantes
 polinizadores.
 </p>
 
