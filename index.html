@@ -5,212 +5,105 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apiário Nectaris</title>
 <style>
-/* Fundo totalmente preto premium integrado ao banner */
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: #0b0b0b; 
-color: #e0e0e0; /* Texto claro para contraste perfeito */
-text-align: center;
-position: relative;
-overflow-x: hidden;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #0b0b0b; 
+    color: #cccccc;
+    text-align: center;
+    line-height: 1.8; /* Aumentado para melhor leitura */
 }
 
-/* Detalhes de Colmeias (Favos) fixos nas laterais do site */
+/* Favos mais sutis */
 body::before, body::after {
-content: "⬡⬢⬡\n⬢⬡⬢\n⬡⬢⬡";
-position: fixed;
-top: 30%;
-font-size: 24px;
-color: rgba(212, 175, 55, 0.15); /* Dourado sutil translúcido */
-white-space: pre;
-font-family: monospace;
-pointer-events: none;
-letter-spacing: 2px;
-line-height: 1.2;
+    content: "⬡⬢⬡\n⬢⬡⬢\n⬡⬢⬡";
+    position: fixed;
+    top: 30%;
+    font-size: 20px;
+    color: rgba(212, 175, 55, 0.08); /* Mais discreto */
+    white-space: pre;
+    pointer-events: none;
 }
-body::before { left: 4%; }
-body::after { right: 4%; }
+body::before { left: 3%; }
+body::after { right: 3%; }
 
-/* Estilo do banner responsivo */
-.banner-container {
-width: 100%;
-overflow: hidden;
-line-height: 0;
-background: #000000;
-}
 .banner-container img {
-width: 100%;
-height: auto;
-display: block;
-max-width: 1200px;
-margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Cabeçalho limpo e integrado */
-header {
-background: #000000; 
-padding: 40px 20px 60px 20px;
-}
+header { padding: 40px 20px; }
 
-/* Títulos em Dourado extraído do logo */
 h2, h3 {
-color: #d4af37; 
-margin-top: 40px;
-font-weight: 400;
-letter-spacing: 1px;
+    color: #d4af37;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 p {
-font-size: 19px;
-max-width: 720px;
-margin: auto;
-padding: 18px 20px;
-line-height: 1.7;
-color: #cccccc;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-/* Elemento para as abelhas com rastro pontilhado */
-.trilha-abelha {
-display: inline-block;
-font-size: 14px;
-color: rgba(212, 175, 55, 0.4);
-margin: 10px 0;
-font-style: normal;
-}
-
-/* Seção de Compromisso com bordas sutis */
-#compromisso {
-margin-top: 40px;
-padding: 20px 0;
-}
+/* Estilo para garantir que o nome da marca se destaque */
+strong { color: #f4be52; }
 
 footer {
-margin-top: 80px;
-padding: 30px;
-background: #050505;
-color: #666;
-font-size: 14px;
-border-top: 1px solid #1a1a1a;
+    padding: 40px;
+    color: #444;
+    font-size: 12px;
+    border-top: 1px solid #1a1a1a;
 }
 </style>
 </head>
-
 <body>
 
-<!-- Seu banner real (imagem 173142.jpg) -->
 <div class="banner-container">
-    <img src="banner-apiario.jpg" alt="Apiário Nectaris - Essência da Colmeia">
+    <img src="banner-apiario.jpg" alt="Banner Apiário Nectaris">
 </div>
 
 <header>
-  <h2>Bem-vindo ao Apiário Nectaris</h2>
+    <h2>Bem-vindo ao <strong>Apiário Nectaris</strong></h2>
 
     <p>
-        No Apiário Nectaris o nosso compromisso principal é cuidar das abelhas, preservar a biodiversidade e consequentemente oferecer
+        No <strong>Apiário Nectaris</strong>, o nosso compromisso principal é cuidar das abelhas, preservar a biodiversidade e consequentemente oferecer 
         produtos de origem natural com qualidade e transparência, pois produzir mel vai muito além da colheita.
     </p>
 
-    <!-- Abelha voando entre os parágrafos -->
-    <div class="trilha-abelha">────────────── 🐝</div>
-
     <p>
-        Cada colmeia é manejada com respeito ao comportamento natural das abelhas,
-        buscando antes de tudo o seu bem-estar e contribuindo para a polinização das plantas,
-        essencial para o equilíbrio dos ecossistemas.
+        Cada colmeia é manejada com respeito ao comportamento natural das abelhas, buscando antes de tudo o seu bem-estar e contribuindo para a 
+        polinização das plantas, essencial para o equilíbrio dos ecossistemas.
     </p>
 
     <p>
-        Valorizamos práticas responsáveis, a conservação da natureza e a melhoria
-        contínua do manejo apícola, porque um mel de excelência começa com
-        abelhas saudáveis e um ambiente preservado.
+        Valorizamos práticas responsáveis, a conservação da natureza e a melhoria contínua do manejo apícola, 
+        porque um mel de excelência começa com abelhas saudáveis e um ambiente preservado.
     </p>
 
     <section id="compromisso">
+        <h2>Nosso Compromisso</h2>
 
-<h2>Nosso Compromisso</h2>
+        <h3>🐝 Respeito às abelhas</h3>
+        <p>A proteção das abelhas é a essência do nosso trabalho. Adotamos práticas de manejo responsáveis, priorizando a saúde e o bem-estar das colônias.</p>
 
-<h3>🐝 Respeito às abelhas</h3>
-<p>
-A proteção das abelhas é a essência do nosso trabalho. Adotamos práticas de manejo responsáveis,
-priorizando a saúde e o bem-estar das colônias. Buscamos minimizar o estresse durante os resgates, 
-inspeções e respeitando também os ciclos naturais de desenvolvimento das abelhas.
-</p>
+        <h3>🌿 Preservação da natureza</h3>
+        <p>Acreditamos que a apicultura deve caminhar lado a lado com a conservação ambiental e a biodiversidade.</p>
 
-<div class="trilha-abelha">🐝 ⠂⠄⠂⠁⠁⠂⠄⠂⠁⠁⠂⠄</div>
+        <h3>🍯 Qualidade e transparência</h3>
+        <p>Nos dedicamos a produzir mel com responsabilidade, preservando suas características naturais e a confiança de nossos clientes.</p>
+    </section>
 
-<h3>🌿 Preservação da natureza</h3>
-<p>
-Acreditamos que a apicultura deve caminhar lado a lado com a conservação ambiental.
-As abelhas desempenham um papel indispensável na polinização de inúmeras espécies
-vegetais, contribuindo para a biodiversidade, a produção de alimentos e o equilíbrio
-dos ecossistemas.
-</p>
-
-<h3>🍯 Qualidade e transparência</h3>
-<p>
-Nos dedicamos a produzir mel e outros produtos apícolas com responsabilidade,
-preservando suas características naturais. Valorizamos a transparência em
-nossos processos e o compromisso com a confiança de nossos clientes.
-</p>
-
-<div class="trilha-abelha">⠄⠂⠄⠂⠁⠁⠂⠄⠂⠁⠁⠂ 🐝</div>
-
-<h3>📚 Educação e conscientização</h3>
-<p>
-Além da produção apícola, compartilhamos conhecimentos sobre a importância
-das abelhas para o meio ambiente e para a agricultura. Acreditamos que a informação
-é uma ferramenta essencial para incentivar a preservação desses importantes
-polinizadores.
-</p>
-
-</section>
-
-  <h3>Acompanhe nosso trabalho</h3>
-
-<p>
-Acreditamos que compartilhar conhecimento é uma forma de contribuir para a preservação das abelhas e para uma apicultura cada vez mais consciente. Em nosso canal no YouTube publicamos vídeos educativos, curiosidades, manejo, apicultura e informações sobre o universo das abelhas.
-</p>
-
-<!-- Botão do YouTube premium em Preto e Borda Dourada -->
-<a href="https://www.youtube.com/@willianfrancopinto"
-   target="_blank"
-   rel="noopener noreferrer"
-   style="
-      display:inline-flex;
-      align-items:center;
-      gap:12px;
-      background:#000000;
-      color:#d4af37;
-      padding:14px 28px;
-      border-radius:4px;
-      text-decoration:none;
-      font-size:16px;
-      font-weight:600;
-      letter-spacing: 1px;
-      transition:0.3s;
-      border: 1px solid #d4af37;
-      margin-top: 15px;">
-      
-    <svg xmlns="http://www.w3.org/2000/svg"
-         width="24"
-         height="24"
-         viewBox="0 0 24 24"
-         fill="#d4af37">
-      <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.6 15.5v-7L16 12l-6.4 3.5z"/>
-    </svg>
-
-    INSCREVA-SE NO NOSSO CANAL
-</a>  
-  
+    <h3>Acompanhe nosso trabalho</h3>
+    <a href="https://www.youtube.com/@willianfrancopinto" target="_blank" style="color: #d4af37; text-decoration: none; border: 1px solid #d4af37; padding: 10px 20px; display: inline-block; margin-top: 10px;">
+        INSCREVA-SE NO CANAL
+    </a>
 </header>
-  
-<p style="color: #aaaaaa; margin-top: 60px; font-style: italic;">
-"Cuidar das abelhas é cuidar da vida. Cada colmeia saudável contribui para um planeta mais equilibrado e para um futuro mais sustentável."
-</p>
 
 <footer>
-© 2026 Apiário Nectaris - Todos os direitos reservados.
+    © 2026 <strong>Apiário Nectaris</strong> - Todos os direitos reservados.
 </footer>
 
 </body>
