@@ -40,6 +40,43 @@ background: #000000;
 padding: 20px 20px 20px 20px;
 }
 
+<nav style="flex: 1; text-align: center;">
+    <ul class="nav-links" style="display: inline-flex; list-style: none; padding: 0; margin: 0; gap: 20px;">
+        <!-- Adicione os links reais nos campos href ao invés de "#" se quiser que eles funcionem -->
+        <li><a href="/sobre" target="_blank" rel="noopener noreferrer">Sobre Nós</a></li>
+        <li><a href="/curiosidades" target="_blank" rel="noopener noreferrer">Você Sabia?</a></li>
+        <li><a href="/contato" target="_blank" rel="noopener noreferrer">Fale Conosco</a></li>
+        <li>
+            <a href="/pesquisa" target="_blank" rel="noopener noreferrer" aria-label="Pesquisar" style="display: flex; align-items: center; text-decoration: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- CONTAINER DOS BOTÕES SOCIAIS -->
+<div style="display: flex; gap: 10px; margin-left: auto;">
+    
+    <!-- BOTÃO DO YOUTUBE -->
+    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; background:#FFFFFF; padding:14px; border-radius:10px; transition:0.3s;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="red">
+            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.6 15.5v-7L16 12l-6.4 3.5z"/>
+        </svg>
+    </a>
+
+    <!-- BOTÃO DO INSTAGRAM -->
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; background:#FFFFFF; padding:14px; border-radius:10px; border:1px solid #ccc; transition:0.3s;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+    </a>
+</div>
+            
 /* Títulos em Dourado extraído do logo */
 h2, h3 {
 color: #d4af37; 
