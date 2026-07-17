@@ -122,7 +122,83 @@ border-top: 1px solid #1a1a1a;
         width:100%;
         height:auto;
     }
-            
+    <!-- BOTÕES DAS REDES SOCIAIS -->
+    <div style="display: flex; gap: 10px; margin-left: auto; align-items: center;">
+        
+        <!-- BOTÃO DO YOUTUBE -->
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-social btn-youtube">
+        <svg xmlns="http://w3.org" width="28" height="28" viewBox="0 0 24 24">
+            <!-- Fundo vermelho do YT -->
+            <path class="yt-fundo" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8z"/>
+            <!-- Triângulo interno branco -->
+            <path class="yt-triangulo" fill="#FFFFFF" d="M9.6 15.5v-7L16 12l-6.4 3.5z"/>
+        </svg>
+    </a>
+
+    <!-- BOTÃO DO INSTAGRAM -->
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-social btn-instagram">
+        <svg xmlns="http://w3.org" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+    </a>
+
+</div>
+
+<style>
+/* Alinhamento dos botões lado a lado */
+.redes-sociais-container {
+    display: flex;
+    gap: 15px; /* Espaço de 15px entre os botões */
+    align-items: center;
+}
+
+/* Estilo base comum para ambos os botões */
+.btn-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px; /* Deixa ambos com os cantos arredondados iguais */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+/* Efeito ao passar o mouse em qualquer um deles */
+.btn-social:hover {
+    transform: scale(1.08); /* Aumenta levemente de tamanho */
+}
+
+/* Customização específica do YOUTUBE */
+.btn-youtube {
+    background-color: #FF0000; /* Fundo quadrado vermelho */
+}
+.btn-youtube .yt-fundo {
+    fill: transparent; /* Remove o fundo do SVG antigo para usar o fundo do botão */
+}
+.btn-youtube:hover {
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+}
+
+/* ALTERAÇÃO AQUI: Aumenta apenas o triângulo branco interno */
+.btn-youtube .yt-triangulo {
+    transform: scale(1.50); /* 1.50 aumenta em 50%. Se quiser maior, use 1.3 ou 1.4 */
+    transform-origin: center; /* Garante que ele cresça a partir do meio */
+}
+
+/* Customização específica do INSTAGRAM */
+.btn-instagram {
+    color: white; /* Cor do ícone interna */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.btn-instagram:hover {
+    box-shadow: 0 4px 15px rgba(214, 36, 159, 0.4);
+}
+</style>
+</header>            
+   
 </style>
 </head>
 
